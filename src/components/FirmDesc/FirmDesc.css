@@ -173,3 +173,13 @@
     }
 
 }
+
+@media (max-width: 860px) and (max-height: 900px) {
+    .firm-description .firm-description-content .firm-description-content-main {
+        gap: 10px;
+    }
+
+    .firm-description .firm-description-content p {
+        font-size: 12px;
+    }
+}
