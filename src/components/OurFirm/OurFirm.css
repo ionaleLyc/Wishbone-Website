@@ -1,0 +1,53 @@
+.our-firm-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 0 0 0;
+
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.our-firm-section .our-firm-wrapper {
+    width: 768px;
+    height: 582px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.our-firm-section .our-firm-wrapper .our-firm-header p {
+    font-size: 32px;
+    color: var(--color-text-gray_2);
+}
+
+.our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+.our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-description p {
+    font-size: 16px;
+    color: var(--color-text-gray_2);
+    margin: 0;
+}
+
+.our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-author {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-author .our-firm-content-author-info .our-firm-content-author-info-name {
+    font-size: 17px;
+    color: var(--color-text-dark);
+}
+
+.our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-author .our-firm-content-author-info .our-firm-content-author-info-post {
+    font-size: 14px;
+    color: var(--color-text-gray);
+}
