@@ -46,31 +46,27 @@ function Header() {
 
             <div className='burger-menu' style={{ left: displayBurger }}>
 
-                <div className='burger-logo-back-button'>
-                    <div className="header-logo-burger">
-                        <img className="header-logo-image-burger" src={logo} alt="Логотип" />
-                    </div>
-
-                    <div className='burger-menu-close' onClick={controlMenu}>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>
-                    </div>
+                <div className="burger-menu-logo">
+                    <img className="burger-menu-logo-image" src={logo} alt="Логотип" />
                 </div>
 
-                <ul className="header-control-list">
-                    <li className="header-control-list-item"> <a href="/"> Projects </a> </li>
-                    <li className="header-control-list-item"> <a href="/"> About </a> </li>
-                    <li className="header-control-list-item"> <a href="/"> News </a> </li>
-                    <li className="header-control-list-item"> <a href="/"> Team </a> </li>
-                    <li className="header-control-list-item"> <a href="/"> Contact </a> </li>
+                <div className='burger-menu-close' onClick={controlMenu}>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>
+                </div>
+
+                <ul className="burger-menu-list">
+                    <li className="burger-menu-list-item"> <a href="/"> Projects </a> </li>
+                    <li className="burger-menu-list-item"> <a href="/"> About </a> </li>
+                    <li className="burger-menu-list-item"> <a href="/"> News </a> </li>
+                    <li className="burger-menu-list-item"> <a href="/"> Team </a> </li>
+                    <li className="burger-menu-list-item"> <a href="/"> Contact </a> </li>
                 </ul>
 
-                <div className='burger-control-button-container'>
-                    <div className="header-control-button">
+                <div className='burger-menu-button-container'>
+                    <div className="burger-menu-button">
                         <a href="/" > Get Template </a>
                     </div>
                 </div>
-
-
 
             </div>
 
