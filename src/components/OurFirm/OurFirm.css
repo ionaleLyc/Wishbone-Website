@@ -4,16 +4,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 45px 0 0 0;
 
     font-family: 'Poppins', 'sans-serif';
+
+    position: relative;
 }
 
 .our-firm-section .our-firm-wrapper {
-    width: 768px;
-    height: 582px;
+    max-width: 768px;
+    max-height: 582px;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin-inline: clamp(100px, -625.26px + 68.42vw, 360px);
+    margin-block: min(100px, 12.3vh);
 }
 
 .our-firm-section .our-firm-wrapper .our-firm-header p {
@@ -31,6 +34,7 @@
 
 .our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-description p {
     font-size: 16px;
+    /* font-size: clamp(12px, 0.84px + 1.05vw, 16px); */
     color: var(--color-text-gray_2);
     margin: 0;
 }
@@ -39,7 +43,7 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    
+
 }
 
 .our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-author .our-firm-content-author-info .our-firm-content-author-info-name {
@@ -50,4 +54,84 @@
 .our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-author .our-firm-content-author-info .our-firm-content-author-info-post {
     font-size: 14px;
     color: var(--color-text-gray);
+}
+
+@media (max-width: 1060px) {
+    .our-firm-section .our-firm-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-description {
+        padding-right: 0;
+    }
+}
+
+@media (max-height: 780px) {
+    .our-firm-section .our-firm-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-description {
+        padding-right: 0;
+    }
+}
+
+@media (max-height: 700px) {
+    .our-firm-section .our-firm-wrapper .our-firm-header p {
+        font-size: 24px;
+    }
+
+    .our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-description p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 954px) {
+    .our-firm-section .our-firm-wrapper {
+        margin-inline: 40px;
+    }
+
+    .our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-description p {
+        font-size: 14px;
+    }
+
+    .our-firm-section .our-firm-wrapper {
+        gap: 10px;
+    }
+
+    .our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-author {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-author img {
+        max-width: 60px;
+    }
+
+    .our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-author .our-firm-content-author-info .our-firm-content-author-info-name {
+        font-size: 14px;
+    }
+
+    .our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-author .our-firm-content-author-info .our-firm-content-author-info-post {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .our-firm-section .our-firm-wrapper {
+        margin-inline: 30px;
+    }
+
+    .our-firm-section .our-firm-wrapper {
+        gap: 5px;
+    }
+
+    .our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-description p {
+        font-size: 12px;
+    }
+
 }

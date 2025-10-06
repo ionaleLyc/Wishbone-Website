@@ -10,7 +10,13 @@
     position: fixed;
     z-index: 1;
 
-    box-shadow: 0 0px 10px 0 var(--color-text-gray);
+    box-shadow: 0 0px 2px 0 var(--color-text-gray);
+
+    transition: all 0.2s linear;
+}
+
+.header.hidden {
+    transform: translateY(-100%);
 }
 
 .header .header-logo .header-logo-image {
@@ -181,6 +187,20 @@
         padding: 0 20px;
     }
 
+}
+
+@media (max-height: 750px) {
+    .header {
+        min-height: 60px;
+    }
+
+    .header .header-logo {
+        transform: scale(0.7);
+    }
+
+    .header .burger-icon svg {
+        transform: scale(0.7);
+    }  
 }
 
 @media (max-width: 860px) {

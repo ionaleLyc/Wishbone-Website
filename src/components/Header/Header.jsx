@@ -1,11 +1,34 @@
 import logo from '../../assets/logos/logo.png'
 import './Header.css'
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 function Header() {
 
     const [displayBurger, setDisplayBurger] = useState('-50%');
     const [dropShadow, setDropShadow] = useState('0');
+
+    const [hiddenStatus, setHiddenStatus] = useState('');
+    const lastScrollY = useRef(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY.current && currentScrollY > 90) {
+                setHiddenStatus('hidden');
+            } else {
+                setHiddenStatus('');
+            }
+
+            lastScrollY.current = currentScrollY;
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     function controlMenu() {
         if (displayBurger === '-50%') {
@@ -18,7 +41,7 @@ function Header() {
     }
 
     return (
-        <header className="header">
+        <header className={`header ${hiddenStatus}`}>
 
             <div className="burger-icon" onClick={controlMenu}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" ><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
