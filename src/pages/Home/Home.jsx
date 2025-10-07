@@ -1,6 +1,7 @@
 import Header from "../../components/Header/Header";
 import FirmDesc from "../../components/FirmDesc/FirmDesc"
 import OurFirm from "../../components/OurFirm/OurFirm";
+import ReedingHouse from "../../components/ReedingHouse/ReedingHouse";
 
 function Home() {
     return (
@@ -8,6 +9,7 @@ function Home() {
             <Header />
             <FirmDesc />
             <OurFirm />
+            <ReedingHouse />
         </>
     );
 }

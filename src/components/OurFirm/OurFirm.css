@@ -19,9 +19,11 @@
     margin-block: min(100px, 12.3vh);
 }
 
-.our-firm-section .our-firm-wrapper .our-firm-header p {
+.our-firm-section .our-firm-wrapper .our-firm-header h2 {
     font-size: 32px;
     color: var(--color-text-gray_2);
+    margin: 0;
+    font-weight: 300;
 }
 
 .our-firm-section .our-firm-wrapper .our-firm-content .our-firm-content-description {
@@ -81,7 +83,7 @@
 }
 
 @media (max-height: 700px) {
-    .our-firm-section .our-firm-wrapper .our-firm-header p {
+    .our-firm-section .our-firm-wrapper .our-firm-header h2 {
         font-size: 24px;
     }
 

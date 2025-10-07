@@ -8,7 +8,7 @@ function OurFirm() {
             <div className='our-firm-wrapper'>
 
                 <div className='our-firm-header'>
-                    <p>Our Firm</p>
+                    <h2>Our Firm</h2>
                 </div>
 
                 <div className='our-firm-content'>
